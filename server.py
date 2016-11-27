@@ -88,7 +88,7 @@ class DemoService(object):
     def GET(self):
         """Shows the default page with sample text content"""
 
-        return lookup.get_template("index.html").render(content=self.defaultContent)
+        return lookup.get_template("default.html").render(content=self.defaultContent)
         # return lookup.get_template("user.html").render(content=None)
 
 
@@ -105,7 +105,7 @@ class DemoService(object):
             print "ERROR: %s" % e
             return str(e)
 
-        
+
 
 if __name__ == '__main__':
     lookup = TemplateLookup(directories=["templates"])
