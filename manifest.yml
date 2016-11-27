@@ -5,7 +5,7 @@ declared-services:
     plan: tiered
 
 applications:
-- name: personality-insights-python
+- name: hackaton-cognitivo
   command: python server.py
   path: .
   memory: 256M

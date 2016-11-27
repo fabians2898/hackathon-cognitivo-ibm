@@ -77,13 +77,13 @@ class DemoService(object):
     def __init__(self, service):
         self.service = service
         self.defaultContent = None
-        try:
-            contentFile = open("public/text/en.txt", "r")
-            self.defaultContent = contentFile.read()
-        except Exception as e:
-            print "ERROR: couldn't read mobidick.txt: %s" % e
-        finally:
-            contentFile.close()
+        # try:
+        #    contentFile = open("public/text/en.txt", "r")
+        #    self.defaultContent = contentFile.read()
+        #except Exception as e:
+        #    print "ERROR: couldn't read mobidick.txt: %s" % e
+        #finally:
+        #    contentFile.close()
 
     def GET(self):
         """Shows the default page with sample text content"""
